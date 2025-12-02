@@ -9,7 +9,7 @@ To facilitate API development and testing, the Spoolman Updater API utilizes Swa
 > [!TIP]
 > The new UI add abilities to set which spool is in which tray of the AMS. Also there is a scan button (top right) that allows you to scan a barcode/qrcode on a spool and that will lead to a page where you can set in which tray the spool is.
 
-## PLEASE READ ALL THE INSTRUCTIONS, THERE IS A DIFFERENCE BASED ON THE VERSION OF YOUR BAMBU LAB HA INTEGRATION
+## PLEASE READ ALL THE INSTRUCTIONS, THERE IS A DIFFERENCE BASED ON THE VERSION OF YOUR BAMBU LAB HA INTEGRATION. Also, the H2D and P2S are still not fully tested. If you have one of these and want to help out, please reach out.
 
 ## Base URL
 
@@ -309,10 +309,10 @@ rest_command:
 
 ```
 
-# ***FOR Bambu Lab integration 2.1.9 and above H2S/H2D. This will update Spoolman with every tray change during Multi Color Printing**
+# ***FOR Bambu Lab integration 2.1.9 and above FOR H2S. This will update Spoolman with every tray change during Multi Color Printing**
 
-This counts for the H2S and most likely for the H2D also.
-The H2S and possible the H2D also, need and adjustment. The active AMS tray for the P1S remains active after print. Meaning the automation works without issues.
+This counts for the H2S but most likely not for the H2D. From information gathered the H2D acts like the P1S but hasn't been confirmed. I anybody wants to help, please reach out.
+The H2S needs an adjustment. The active AMS tray for the P1S remains active after print. Meaning the automation works without issues.
 With the H2S the active tray becomes directly inactive after the print, which prevents the automation to fire. For this to work you need to create a helper and automation
 Utility meter, rest command and sensors remain the same as for the P1S. Follow step 1 and 2 for the P1S instructions.
 
